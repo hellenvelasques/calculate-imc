@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/main.js" defer type="module"></script>
+    
+    <script src="https://kit.fontawesome.com/ab8ffcf404.js" crossorigin="anonymous"></script> 
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <div class="alertError">
+      Digite somente números
+    </div>
+
+    <main>
+      <form >
+        <h1>Cálculo de IMC</h1>
+
+        <div class="inputWrapper">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" name="" id="weight" placeholder="70">
+        </div>
+
+        <div class="inputWrapper">
+            <label for="height">Altura (cm)</label>
+            <input type="text" name="" id="height" placeholder="178">
+        </div>
+
+        <button>
+            Calcular IMC
+            <img src="assets/arrow-up-right.svg" alt="arrow icon">
+        </button>
+      </form>
+    </main>
+
+    <div class="modalWrapper">
+      <div class="modal">
+        <h2>Seu IMC é de 28</h2>
+        <p>Peso normal</p>
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </body>
+</html>
