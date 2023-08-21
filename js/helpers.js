@@ -12,13 +12,13 @@ export const displayResultMessage = (resultCalculateIMC, classification) => {
 
   if (resultCalculateIMC < 18.5) {
     classification = 'Abaixo do peso';
-  } else if (resultCalculateIMC >= 18.6 && resultCalculateIMC <= 24.9) {
+  } else if (resultCalculateIMC >= 18.6 && resultCalculateIMC <= 24.99) {
     classification = 'Peso ideal';
-  } else if (resultCalculateIMC >= 25 && resultCalculateIMC <= 29.9) {
+  } else if (resultCalculateIMC >= 25 && resultCalculateIMC <= 29.99) {
     classification = 'Sobrepeso';
-  } else if (resultCalculateIMC >= 30 && resultCalculateIMC <= 34.9) {
+  } else if (resultCalculateIMC >= 30 && resultCalculateIMC <= 34.99) {
     classification = 'Obesidade grau 1';
-  } else if (resultCalculateIMC >= 35 && resultCalculateIMC <= 39.9) {
+  } else if (resultCalculateIMC >= 35 && resultCalculateIMC <= 39.99) {
     classification = 'Obesidade grau 2 (severa)';
   } else if (resultCalculateIMC >= 40) {
     classification = 'Obesidade grau 3 (mórbida)';
